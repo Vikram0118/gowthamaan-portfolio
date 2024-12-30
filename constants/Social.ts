@@ -16,7 +16,7 @@ export const socials: ISocial[] = [
   {
     label: "linkedin",
     displayKey: "Prefer networking at ",
-    displayValue: "linkedin.com/falgunisarkar",
-    href: "https://www.linkedin.com/in/falgunisarkar",
+    displayValue: "linkedin.com/gowthamaan",
+    href: "https://www.linkedin.com/in/gowthamaan",
   },
 ];

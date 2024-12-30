@@ -1,20 +1,38 @@
-import Head from "next/head";
+"use client";
+
 import Footer from "./Footer";
 import Menus from "./Menu";
+import { motion } from "framer-motion";
 
 const Layout: React.FC<{
   children: React.ReactNode;
-  title: string;
   sectionProps?: React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLElement>,
     HTMLElement
   >;
-}> = ({ children, title, sectionProps }) => (
+}> = ({ children, sectionProps }) => (
   <>
-    <Head>
-      <title>{`${title} | Gowthamaan Palani`}</title>
-    </Head>
-    <div className={` bg-white text-black`} aria-label="main-content">
+    <motion.div
+      className="text-black"
+      aria-label="main-content"
+      initial="pageInitial"
+      animate="pageAnimate"
+      exit={{ opacity: 0, backgroundColor: "#000" }}
+      variants={{
+        pageInitial: {
+          opacity: 0,
+          backgroundColor: "#000",
+        },
+        pageAnimate: {
+          opacity: 1,
+          backgroundColor: "#F8F8F7",
+          transition: {
+            type: "tween",
+            duration: 1,
+          },
+        },
+      }}
+    >
       <main
         className="container mx-auto py-10 pb-20 max-w-2xl w-full min-h-fit flex flex-col gap-10 px-4 md:px-0 relative"
         {...sectionProps}
@@ -23,7 +41,7 @@ const Layout: React.FC<{
       </main>
 
       <Footer />
-    </div>
+    </motion.div>
     <Menus />
   </>
 );

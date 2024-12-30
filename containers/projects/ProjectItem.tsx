@@ -18,7 +18,10 @@ const ProjectItem: React.FC<IProjectItemProps> = ({ project }) => {
   return (
     <DivWBorderWrapper>
       <div className="space-y-2">
-        <p className="text-base font-medium font-poppins" aria-label={title}>
+        <p
+          className="project-title text-base font-medium font-poppins"
+          aria-label={title}
+        >
           {title}
         </p>
         <div aria-label="links" className="space-x-4 text-[0.8125rem]">

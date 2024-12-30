@@ -9,7 +9,7 @@ import { educationItems } from "@/constants/education";
 
 const Home = () => {
   return (
-    <Layout title="Hey 👋🏻">
+    <Layout>
       <Profile src="/assets/png/display-picture.png" />
       <AboutMe />
       <Education educations={educationItems} />

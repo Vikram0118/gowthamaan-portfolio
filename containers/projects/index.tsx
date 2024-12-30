@@ -4,7 +4,7 @@ import ProjectsList from "./ProjectList";
 
 const Projects = () => {
   return (
-    <Layout title="Projects">
+    <Layout>
       <div className="mt-5 mb-10">
         <PageName label="Projects" />
       </div>

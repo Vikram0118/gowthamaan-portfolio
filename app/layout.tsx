@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable}  ${poppins.variable} font-outfit antialiased overflow-x-hidden`}
+        className={`${outfit.variable}  ${poppins.variable} font-outfit antialiased overflow-x-hidden bg-black`}
       >
         {children}
       </body>
