@@ -13,7 +13,7 @@ const Layout: React.FC<{
 }> = ({ children, sectionProps }) => (
   <>
     <motion.div
-      className="text-black"
+      className="text-black min-h-screen"
       aria-label="main-content"
       initial="pageInitial"
       animate="pageAnimate"
@@ -34,7 +34,7 @@ const Layout: React.FC<{
       }}
     >
       <main
-        className="container mx-auto py-10 pb-20 max-w-2xl w-full min-h-fit flex flex-col gap-10 px-4 md:px-0 relative"
+        className="container mx-auto py-10 pb-20 max-w-3xl w-full min-h-fit flex flex-col gap-10 px-4 md:px-0 relative"
         {...sectionProps}
       >
         {children}

@@ -4,8 +4,8 @@ export const socials: ISocial[] = [
   {
     label: "mail",
     displayKey: "Mail me at ",
-    displayValue: "gowthamaanpalani@gmail.com",
-    href: "mailto:gowthamaanpalani@gmail.com",
+    displayValue: "gowthamaan.mail@gmail.com",
+    href: "mailto:gowthamaan.mail@gmail.com",
   },
   {
     label: "github",

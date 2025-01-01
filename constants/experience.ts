@@ -3,39 +3,49 @@ import { colorMap } from "@/utils/colormap";
 
 export const experiencesItems: IExperience[] = [
   {
-    companyName: "NPTEL - IITM",
-    duration: "Aug '24 - Dec '24",
-    tags: ["full-time"],
-    tagBgColors: [colorMap["full-time"]],
-    title: "Teaching Assistent",
-    location: "Online",
-    desc: [
-      "Tecaching Asssitent for Machine Learning course on NPTEL",
-      "Worked on the course under the guidence of Dr.Ganapathy"
-    ],
-  },
-  {
-    companyName: "Aerobiosys Innovations",
-    duration: "Aug '23 - Present",
+    companyName: "Aerobiosys Innovations Pvt. Ltd",
+    duration: "Jan 22 - Present",
     tags: ["full-time"],
     tagBgColors: [colorMap["full-time"]],
     title: "Software Engineer",
-    location: "Hybrid",
+    location: "Chennai & Puducherry, India",
     desc: [
-      "All things coding is handled by me ✨",
-      "All things coding is handled by me ✨"
+      "Developed <span class='semi-bold'>JeevanConnect</span>, a cloud platform for JeevanLite medical ventilators, using  <span class='semi-bold'>Flutter, Django </span > and  <span class='semi-bold'>PostgreSQL </span>",
+      "Created embedded firmware applications for  <span class='semi-bold'>STM32</span> microcontrollers"
     ],
   },
   {
-    companyName: "Syntax Resarch",
-    duration: "Aug '22 - Aug '23",
+    companyName: "Aerobiosys Innovations Pvt. Ltd",
+    duration: "Oct 2020 - Jan 2022",
     tags: ["full-time"],
     tagBgColors: [colorMap["full-time"]],
-    title: "Research Intern",
-    location: "Hybrid",
+    title: "Android Application Developer Intern",
+    location: "Puducherry, India",
     desc: [
-      "All things coding is handled by me ✨",
-      "All things coding is handled by me ✨"
+      "Designed and developed an  <span class='semi-bold'>IoT-based mobile application</span> in  <span class='semi-bold'>Flutter</span> for JeevanLite medical ventilators",
+    ],
+  },
+  {
+    companyName: "Future Gurukuls Pvt. Ltd",
+    duration: "Oct 2020 - Feb 2021",
+    tags: ["full-time"],
+    tagBgColors: [colorMap["full-time"]],
+    title: "Embedded Firmware Developer",
+    location: "Puducherry, India",
+    desc: [
+      "Developed user-friendly libraries to interface components with  <span class='semi-bold'>ATMega328</span> and <span class='semi-bold'>ATMega2560</span> for educational purposes.",
+      "Conducted workshops for undergraduate students on  <span class='semi-bold'>Introduction to Embedded Systems</span> using the  <span class='semi-bold'>Arduino</span> platform"
+    ],
+  },
+  {
+    companyName: "Syntank Pvt. Ltd",
+    duration: "Sep 2019 - Aug 2020",
+    tags: ["full-time"],
+    tagBgColors: [colorMap["full-time"]],
+    title: "Reserach Assistant",
+    location: "Puducherry",
+    desc: [
+      "Designed and developed innovative  <span class='semi-bold'>science kits</span> for students, along with teaching aids tailored for schools"
     ],
   },
 ];

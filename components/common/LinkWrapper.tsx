@@ -4,11 +4,14 @@ import Image from "next/image";
 import Link, { LinkProps } from "next/link";
 import { cn } from "@/utils/cn";
 
+type TargetType = "_blank" | "_self" | "_parent" | "_top";
+
 interface LinkWrapperProps extends LinkProps {
   href: string;
   children: React.ReactNode;
   linkIcon?: boolean;
   className?: string;
+  target?: TargetType;
 }
 
 export const LinkWrapper: React.FC<LinkWrapperProps> = ({
@@ -16,12 +19,13 @@ export const LinkWrapper: React.FC<LinkWrapperProps> = ({
   children,
   linkIcon,
   className,
+  target = "_blank",
 }) => {
   return (
     <Link
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className={cn(
         "inline-flex items-center group",
         className,
@@ -34,8 +38,6 @@ export const LinkWrapper: React.FC<LinkWrapperProps> = ({
       <div>{children}</div>
       {linkIcon && (
         <div className="group-hover:animate-shake">
-          {" "}
-          {/* Use `group-hover` here */}
           <Image
             src="/assets/svg/link.svg"
             alt="link"

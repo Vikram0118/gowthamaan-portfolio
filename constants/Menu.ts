@@ -4,25 +4,31 @@ export const menuItems: IMenuItems[] = [
   {
     href: "/",
     src: "/assets/svg/home.svg",
-    name: "home",
+    name: "Home",
+    color: "#b2b2b2",
+  },
+  {
+    href: "/about",
+    src: "/assets/svg/about.svg",
+    name: "About",
     color: "#b2b2b2",
   },
   {
     href: "/projects",
     src: "/assets/svg/projects.svg",
-    name: "projects",
+    name: "Projects",
     color: "#b2b2b2",
   },
   {
     href: "/blog",
     src: "/assets/svg/blog.svg",
-    name: "blog",
+    name: "Blog",
     color: "#b2b2b2",
   },
   {
     href: "/standing-invitation",
     src: "/assets/svg/standing-invitation.svg",
-    name: "standing-invitation",
+    name: "Standing Invitation",
     color: "#b2b2b2",
   },
   {

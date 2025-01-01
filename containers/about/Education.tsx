@@ -13,29 +13,28 @@ interface EducationProps {
 const Education: React.FC<EducationProps> = ({ educations }) => (
   <SectionWrapper>
     <SectionHeading heading="Education" fontColor="#0a0a0a" />
-    <div className="space-y-5">
+    <div className="space-y-8">
       {educations.map((education: IEducation, index) => {
         const { schoolName, major, degree, duration, location }: IEducation =
           education;
 
         return (
           <DivWBorderWrapper key={`exp-${index}`}>
-            <div className="flex flex-row gap-12">
-              <div className="flex flex-col w-1/4">
-                <p className="text-sm font-medium" aria-label="duration">
-                  {degree}
-                </p>
-                <p className="text-sm" aria-label="duration">
-                  {duration}
-                </p>
+            <div className="grid grid-cols-12 gap-8">
+              <div className="col-span-4 flex flex-col gap-4">
+                <div>
+                  <p className="text-base font-medium mb-1">{degree}</p>
+                  <p className="text-sm text-gray-600">{duration}</p>
+                </div>
               </div>
-              <div className="flex flex-col w-2/3">
-                <p className="text-sm font-medium" aria-label="school name">
-                  {schoolName}
-                </p>
-                <p className="text-sm" aria-label="major">
-                  {major}
-                </p>
+              <div className="col-span-8 flex flex-col gap-4">
+                <div>
+                  <p className="text-base font-medium mb-1">{schoolName}</p>
+                  <p className="text-sm text-gray-600">{major}</p>
+                  {location && (
+                    <p className="text-sm text-gray-600">{location}</p>
+                  )}
+                </div>
               </div>
             </div>
           </DivWBorderWrapper>

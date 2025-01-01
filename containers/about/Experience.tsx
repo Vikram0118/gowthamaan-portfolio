@@ -1,7 +1,6 @@
 import React from "react";
 import {
   DivWBorderWrapper,
-  LinkWrapper,
   ListWrapper,
   SectionHeading,
   SectionWrapper,
@@ -16,7 +15,7 @@ interface ExperienceProps {
 const Experience: React.FC<ExperienceProps> = ({ experiences }) => (
   <SectionWrapper>
     <SectionHeading heading="Experience" fontColor="#0a0a0a" />
-    <div className="space-y-4">
+    <div className="space-y-8">
       {experiences.map((experience, index) => {
         const {
           companyName,
@@ -30,15 +29,13 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => (
 
         return (
           <DivWBorderWrapper key={`exp-${index}`}>
-            <div className="flex flex-row gap-12">
-              <div className="flex flex-col w-1/4 gap-1">
-                <p className="text-sm font-medium" aria-label="duration">
-                  {companyName}
-                </p>
-                <p className="text-sm" aria-label="duration">
-                  {duration}
-                </p>
-                <div className="flex flex-row space-x-2">
+            <div className="grid grid-cols-12 gap-8">
+              <div className="col-span-4 flex flex-col gap-2">
+                <div>
+                  <p className="text-base font-medium mb-1">{companyName}</p>
+                  <p className="text-sm text-gray-600">{duration}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
                   {tags.map((tag, i) => (
                     <Tag
                       label={tag}
@@ -52,19 +49,21 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => (
                   ))}
                 </div>
               </div>
-              <div className="flex flex-col gap-2">
-                <div className="text-sm font-medium" aria-label="place">
-                  {title}
-                  <br />
-                  {location}
+              <div className="col-span-8 flex flex-col gap-2">
+                <div>
+                  <p className="text-base font-medium mb-1">{title}</p>
+                  <p className="text-sm text-gray-600">{location}</p>
                 </div>
                 <ListWrapper
                   liProps={{
-                    className: "w-auto",
+                    className: "text-base leading-relaxed",
                   }}
                 >
                   {desc.map((item, i) => (
-                    <li key={`desc-${index}-${i}`}>{item}</li>
+                    <li
+                      key={`desc-${index}-${i}`}
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
                   ))}
                 </ListWrapper>
               </div>

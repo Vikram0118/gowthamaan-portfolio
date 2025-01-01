@@ -3,16 +3,16 @@ import { IEducation } from "@/interface/education";
 export const educationItems: IEducation[] = [
   {
     schoolName: "Indian Institute of Technology, Madras",
-    duration: "Present",
+    duration: "Ongoing",
     degree: "Master of Science (MS)",
-    major: "Computer Vision, Machine Learning",
+    major: "Medical Image Analysis, ML, CV",
     location: "Chennai, India",
   },
   {
     schoolName: "Pondicherry Engineering College",
     duration: "2022",
     degree: "Bachleors of Technology (B.Tech)",
-    major: "Electrnoics and Communication",
+    major: "Electronics and Communication Engineering",
     location: "Pondicherry, India",
   },
   {

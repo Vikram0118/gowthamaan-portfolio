@@ -1,4 +1,5 @@
 import {
+  LinkWrapper,
   ParagraphWrapper,
   SectionHeading,
   SectionWrapper,
@@ -6,20 +7,26 @@ import {
 
 const AboutMe = () => (
   <SectionWrapper>
-    <SectionHeading heading="About Me" fontColor="#0a0a0a" />
+    <SectionHeading fontColor="#0a0a0a" />
     <ParagraphWrapper>
       <p>
-        Machine Learning Researcher specializing in Computer Vision, with
-        hands-on experience solving healthcare challenges. Currently pursuing
-        Masters at IIT Madras, I combine my passion for AI research with
-        software development expertise to build practical, impactful solutions.
+        I'm Gowthamaan, currently pursuing my MS at IIT Madras under the
+        guidance of Prof. Ganapathy Krishnamurthi focusing on Medical Image
+        Analysis with Deep Learning. Alongside my studies, I work as a Software
+        Engineer at Aerobiosys, applying my skills to develop respiratory
+        therapetuic devices.
       </p>
       <p style={{ marginTop: "20px" }}>
-        I thrive on exploring new frontiers in technology and research. My
-        commitment to continuous learning fuels my journey in developing
-        cutting-edge AI solutions, always seeking to bridge the gap between
-        theoretical advances and real-world impact.
+        I’ve always had a passion for writing and software development, and I’ve
+        created this space to share some of the things I’ve learned—hopefully,
+        you’ll find them useful!
       </p>
+      <div style={{ marginTop: "20px" }}>
+        I’m always happy to get email and meet new people - see{" "}
+        <LinkWrapper href="/standing-invitation" target="_self">
+          Standing Invitation
+        </LinkWrapper>
+      </div>
     </ParagraphWrapper>
   </SectionWrapper>
 );
