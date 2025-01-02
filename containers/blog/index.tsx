@@ -1,12 +1,14 @@
 import { PageName } from "@/components/common";
 import Layout from "@/components/Layout";
+import BlogListing from "./BlogListing";
 
 const Blog = () => {
   return (
     <Layout>
-      <div className="mt-5 mb-10">
+      <div>
         <PageName label="Blog" />
       </div>
+      <BlogListing />
     </Layout>
   );
 };

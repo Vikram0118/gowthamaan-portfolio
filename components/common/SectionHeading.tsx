@@ -1,17 +1,15 @@
 export const SectionHeading: React.FC<{
-  heading?: string;
+  heading: string;
   fontColor: string;
 }> = ({ heading, fontColor }) => {
   return (
-    heading && (
-      <p
-        className="text-lg font-medium underline underline-offset-4 font-poppins"
-        style={{
-          color: fontColor,
-        }}
-      >
-        {heading}
-      </p>
-    )
+    <p
+      className="text-lg font-medium underline underline-offset-4 font-poppins"
+      style={{
+        color: fontColor,
+      }}
+    >
+      {heading}
+    </p>
   );
 };

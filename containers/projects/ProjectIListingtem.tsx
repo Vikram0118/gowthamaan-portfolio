@@ -11,7 +11,7 @@ interface IProjectItemProps {
   project: IProject;
 }
 
-const ProjectItem: React.FC<IProjectItemProps> = ({ project }) => {
+const ProjectListingItem: React.FC<IProjectItemProps> = ({ project }) => {
   const { tags, tagBgColors, code, preview, title, description, thumbnail } =
     project;
 
@@ -72,4 +72,4 @@ const ProjectItem: React.FC<IProjectItemProps> = ({ project }) => {
   );
 };
 
-export default ProjectItem;
+export default ProjectListingItem;

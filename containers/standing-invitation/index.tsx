@@ -1,4 +1,3 @@
-import { PageName } from "@/components/common";
 import Layout from "@/components/Layout";
 import InvitationContent from "./InvitationContent";
 import Profile from "@/components/common/Profile";

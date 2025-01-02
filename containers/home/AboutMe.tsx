@@ -1,13 +1,11 @@
 import {
   LinkWrapper,
   ParagraphWrapper,
-  SectionHeading,
   SectionWrapper,
 } from "@/components/common";
 
 const AboutMe = () => (
   <SectionWrapper>
-    <SectionHeading fontColor="#0a0a0a" />
     <ParagraphWrapper>
       <p>
         I'm Gowthamaan, currently pursuing my MS at IIT Madras under the

@@ -1,6 +1,6 @@
 import { PageName, PageSubHeading } from "@/components/common";
 import Layout from "@/components/Layout";
-import ProjectsList from "./ProjectList";
+import ProjectsListing from "./ProjectListing";
 
 const Projects = () => {
   return (
@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="mt-5 mb-10">
         <PageName label="Projects" />
       </div>
-      <ProjectsList />
+      <ProjectsListing />
     </Layout>
   );
 };

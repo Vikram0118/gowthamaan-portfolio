@@ -89,7 +89,7 @@ const InvitationContent = () => (
         fontColor="#0a0a0a"
       />
       <p className="mb-4">Here's your opening line…</p>
-      <pre className="whitespace-pre-wrap p-4 rounded-lg font-normal text-gray-800">
+      <pre className="whitespace-pre-wrap p-4 rounded-lg font-light text-white bg-[#34455d]">
         {`Hi,
 I'm sending you this email because of the standing invitation page on your website.
 I need help with/I want your thoughts on/I'd like to share...

@@ -13,12 +13,12 @@ export const menuItems: IMenuItems[] = [
     name: "About",
     color: "#b2b2b2",
   },
-  {
-    href: "/projects",
-    src: "/assets/svg/projects.svg",
-    name: "Projects",
-    color: "#b2b2b2",
-  },
+  // {
+  //   href: "/projects",
+  //   src: "/assets/svg/projects.svg",
+  //   name: "Projects",
+  //   color: "#b2b2b2",
+  // },
   {
     href: "/blog",
     src: "/assets/svg/blog.svg",
